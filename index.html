@@ -14,7 +14,7 @@
    <!-- ✅ Canonical -->
    <link rel="canonical" href="https://www.cearaceramica.com.br/">
 
-   <!-- ✅ Open Graph (Facebook / Instagram Ads) -->
+   <!-- ✅ Open Graph -->
    <meta property="og:type" content="website">
    <meta property="og:url" content="https://www.cearaceramica.com.br/">
    <meta property="og:title" content="Ceará Cerâmica | Tijolos e Blocos Direto da Fábrica - Aquiraz CE">
@@ -35,7 +35,7 @@
    <link rel="icon" type="image/png" href="img/logo-ceara.png">
    <link rel="apple-touch-icon" href="img/logo-ceara.png">
 
-   <!-- ✅ Preload hero image (melhora performance) -->
+   <!-- ✅ Preload hero image -->
    <link rel="preload" as="image" href="img/fundo-hero.jpeg">
 
    <!-- ✅ Preconnect Font Awesome -->
@@ -45,7 +45,7 @@
    <!-- ✅ CSS -->
    <link rel="stylesheet" href="style.css">
 
-   <!-- ✅ Schema Markup - Local Business (Google) -->
+   <!-- ✅ Schema Markup -->
    <script type="application/ld+json">
    {
      "@context": "https://schema.org",
@@ -83,7 +83,7 @@
    <header>
        <nav class="navbar">
            <div class="logo">
-            <a href="#"><img src="img/logo-ceara.png" alt="Logo Ceará Cerâmica"></a>
+               <a href="#"><img src="img/logo-ceara.png" alt="Logo Ceará Cerâmica"></a>
                <a href="#"><span class="nome-empresa">Ceará Cerâmica</span></a>
            </div>
            <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
@@ -113,21 +113,25 @@
                <p>Quer oferecer os melhores tijolos para seus clientes?</p>
                <small>Preencha seu WhatsApp e receba a tabela de preço direto no WhatsApp.</small>
                <div class="prova-social">
-                   <div class="estrelas"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                   <div class="estrelas">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
                    <span>+1200 obras atendidas | 4.9/5 no Google</span>
                </div>
            </div>
-          <!-- ⚠️ IMPORTANTE: Substitua "SEUIDAQUI" pelo seu ID real do Formspree -->
-          <form id="form-orcamento" class="form-orcamento" action="https://formspree.io/f/xbdnyydj" 
-            method="POST">
+           
+          <!-- ✅ FORMULÁRIO ATUALIZADO PARA WHATSAPP -->
+          <form id="form-orcamento" class="form-orcamento">
             <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu WhatsApp com DDD*" required>
-            <input type="hidden" name="_subject" value="Novo Lead - Site Ceará Cerâmica">
-            <!-- ✅ Essa linha redireciona de volta pro seu site -->
-            <input type="hidden" name="_next" value="https://juniormoraes722.github.io/ceara-ceramica/">
             <button type="submit" class="btn-orcamento">Quero Preço de Fábrica →</button>
-            </form>
+          </form>
+
        </div>
-   </section>
+   </section>C
 
    <section id="produtos" class="produtos">
     <div class="container">
@@ -234,7 +238,6 @@
                </a>
              </p>
            </div>
-
            <div class="footer-col">
              <h3>Contato</h3>
              <p>
@@ -243,7 +246,6 @@
                CNPJ: <a href="https://solucoes.receita.fazenda.gov.br/servicos/cnpjreva/cnpjreva_solicitacao.asp?cnpj=07528409000124" target="_blank" rel="nofollow noopener">07.528.409/0001-24</a>
              </p>
            </div>
-
            <div class="footer-col">
             <h3>Redes</h3>
             <p>
@@ -258,13 +260,8 @@
 
    <a href="https://wa.me/558591295366" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale com a Ceará Cerâmica no WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
-   <script>
-   const menuToggle = document.getElementById('menu-toggle');
-   const navLinks = document.getElementById('nav-links');
-   menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
-   document.querySelectorAll('.nav-links a').forEach(link => {
-       link.addEventListener('click', () => navLinks.classList.remove('active'));
-   });
-   </script>
+   <!-- ✅ Link para o arquivo de script externo -->
+   <script src="script/main.js"></script>
+
 </body>
 </html>
