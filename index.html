@@ -3,10 +3,81 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- ✅ SEO Básico -->
    <title>Ceará Cerâmica | Tijolos, Blocos e Cobogós em Aquiraz - CE</title>
    <meta name="description" content="Fábrica de tijolos 8 furos, bloco estrutural e cobogós em Aquiraz - CE. +50 anos Grupo Tavares. Qualidade, preço direto da fábrica e entrega em todo Ceará.">
-   <link rel="stylesheet" href="style.css">
+   <meta name="keywords" content="tijolo Aquiraz, bloco estrutural Ceará, cobogó CE, fábrica de tijolo Fortaleza, tijolo 8 furos, Ceará Cerâmica, Grupo Tavares">
+   <meta name="author" content="Ceará Cerâmica">
+   <meta name="robots" content="index, follow">
+
+   <!-- ✅ Canonical -->
+   <link rel="canonical" href="https://www.cearaceramica.com.br/">
+
+   <!-- ✅ Open Graph (Facebook / Instagram Ads) -->
+   <meta property="og:type" content="website">
+   <meta property="og:url" content="https://www.cearaceramica.com.br/">
+   <meta property="og:title" content="Ceará Cerâmica | Tijolos e Blocos Direto da Fábrica - Aquiraz CE">
+   <meta property="og:description" content="+50 anos de experiência. Tijolo 8 furos, bloco estrutural e cobogó com entrega em 24h em todo Ceará. Peça cotação agora!">
+   <meta property="og:image" content="https://www.cearaceramica.com.br/img/fundo-hero.jpeg">
+   <meta property="og:image:width" content="1200">
+   <meta property="og:image:height" content="630">
+   <meta property="og:locale" content="pt_BR">
+   <meta property="og:site_name" content="Ceará Cerâmica">
+
+   <!-- ✅ Twitter Card -->
+   <meta name="twitter:card" content="summary_large_image">
+   <meta name="twitter:title" content="Ceará Cerâmica | Tijolos e Blocos Direto da Fábrica">
+   <meta name="twitter:description" content="+50 anos de experiência. Entrega em 24h em todo Ceará.">
+   <meta name="twitter:image" content="https://www.cearaceramica.com.br/img/fundo-hero.jpeg">
+
+   <!-- ✅ Favicon -->
+   <link rel="icon" type="image/png" href="img/logo-ceara.png">
+   <link rel="apple-touch-icon" href="img/logo-ceara.png">
+
+   <!-- ✅ Preload hero image (melhora performance) -->
+   <link rel="preload" as="image" href="img/fundo-hero.jpeg">
+
+   <!-- ✅ Preconnect Font Awesome -->
+   <link rel="preconnect" href="https://cdnjs.cloudflare.com">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+   <!-- ✅ CSS -->
+   <link rel="stylesheet" href="style.css">
+
+   <!-- ✅ Schema Markup - Local Business (Google) -->
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "LocalBusiness",
+     "name": "Ceará Cerâmica",
+     "description": "Fábrica de tijolos 8 furos, bloco estrutural e cobogós em Aquiraz - CE. Grupo Tavares, +50 anos de experiência.",
+     "url": "https://www.cearaceramica.com.br",
+     "telephone": "+55-85-9129-5366",
+     "email": "cearaceramica@gmail.com",
+     "address": {
+       "@type": "PostalAddress",
+       "streetAddress": "BR 116, Km 32, Vila Serpa - SN",
+       "addressLocality": "Aquiraz",
+       "addressRegion": "CE",
+       "postalCode": "61700-000",
+       "addressCountry": "BR"
+     },
+     "geo": {
+       "@type": "GeoCoordinates",
+       "latitude": -3.901,
+       "longitude": -38.391
+     },
+     "openingHours": "Mo-Fr 07:00-17:00",
+     "image": "https://www.cearaceramica.com.br/img/fabrica-ceara.jpeg",
+     "priceRange": "$$",
+     "aggregateRating": {
+       "@type": "AggregateRating",
+       "ratingValue": "4.9",
+       "reviewCount": "1200"
+     }
+   }
+   </script>
 </head>
 <body>
    <header>
@@ -28,11 +99,11 @@
 
    <main>
    <section id="home" class="hero">
-       <img src="img/fundo-hero.jpeg" alt="Pedreiro colocando tijolo Ceará Cerâmica" class="hero-bg">
+       <img src="img/fundo-hero.jpeg" alt="Pedreiro colocando tijolo Ceará Cerâmica" class="hero-bg" fetchpriority="high">
        <div class="hero-content">
            <h1>Tijolo, Bloco e Cobogó Direto da Fábrica em Aquiraz</h1>
            <p>Estoque pronto pra entrega em 24h em todo Ceará. Economize até 15% na sua obra.</p>
-           <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20com%20preco%20de%20fabrica" class="btn-hero-zap" target="_blank"><i class="fab fa-whatsapp"></i> Pedir Cotação no WhatsApp</a>
+           <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20com%20preco%20de%20fabrica" class="btn-hero-zap" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> Pedir Cotação no WhatsApp</a>
        </div>
    </section>
 
@@ -46,11 +117,15 @@
                    <span>+1200 obras atendidas | 4.9/5 no Google</span>
                </div>
            </div>
-          <form id="form-orcamento" class="form-orcamento" action="https://formspree.io/f/MEUIDAQUI" method="POST">
+          <!-- ⚠️ IMPORTANTE: Substitua "SEUIDAQUI" pelo seu ID real do Formspree -->
+          <form id="form-orcamento" class="form-orcamento" action="https://formspree.io/f/xbdnyydj" 
+            method="POST">
             <input type="tel" id="whatsapp" name="whatsapp" placeholder="Seu WhatsApp com DDD*" required>
             <input type="hidden" name="_subject" value="Novo Lead - Site Ceará Cerâmica">
+            <!-- ✅ Essa linha redireciona de volta pro seu site -->
+            <input type="hidden" name="_next" value="https://juniormoraes722.github.io/ceara-ceramica/">
             <button type="submit" class="btn-orcamento">Quero Preço de Fábrica →</button>
-          </form>
+            </form>
        </div>
    </section>
 
@@ -61,32 +136,32 @@
         <h3 class="subtitulo-bloco">Linha Destaque: Entrega em 24h</h3>
         <div class="grid-produtos">
             <div class="card-produto">
-                <img src="img/tijolo-8-furos.jpeg" alt="Tijolo 8 Furos" loading="lazy">
+                <img src="img/tijolo-8-furos.jpeg" alt="Tijolo 8 Furos Ceará Cerâmica Aquiraz" loading="lazy">
                 <h3>Tijolo 8 Furos ECONÔMICO</h3>
                 <p>O mais vendido do Ceará. Economiza até 15% de argamassa.</p>
-                <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%208%20Furos%20ECONOMICO" class="btn-saiba-mais" target="_blank">Pedir Cotação no WhatsApp →</a>
+                <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%208%20Furos%20ECONOMICO" class="btn-saiba-mais" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a>
             </div>
             <div class="card-produto">
-                <img src="img/bloco-estrutural.jpeg" alt="Bloco Estrutural" loading="lazy">
+                <img src="img/bloco-estrutural.jpeg" alt="Bloco Estrutural Cerâmico Ceará" loading="lazy">
                 <h3>Bloco Estrutural RÁPIDO</h3>
                 <p>Obra 30% mais rápida. Dispensa pilares em até 3 andares.</p>
-                <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Bloco%20Estrutural%20RAPIDO" class="btn-saiba-mais" target="_blank">Pedir Cotação no WhatsApp →</a>
+                <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Bloco%20Estrutural%20RAPIDO" class="btn-saiba-mais" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a>
             </div>
             <div class="card-produto">
-                <img src="img/elemento-modular-cobogo.jpeg" alt="Elemento Modular Cobogó" loading="lazy">
+                <img src="img/elemento-modular-cobogo.jpeg" alt="Elemento Modular Cobogó Decorativo" loading="lazy">
                 <h3>Elemento Modular Cobogó</h3>
                 <p>Peças com desenhos decorativos. Possibilitam passagem de luz e ventilação natural.</p>
-                <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Elemento%20Modular%20Cobogo" class="btn-saiba-mais" target="_blank">Pedir Cotação no WhatsApp →</a>
+                <a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Elemento%20Modular%20Cobogo" class="btn-saiba-mais" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a>
             </div>
         </div>
         <h3 class="subtitulo-bloco secundario">Linha Complementar</h3>
         <div class="grid-produtos grid-compacto">
-            <div class="card-produto card-pequeno"><img src="img/tijolo-H8.jpeg" alt="Tijolo H8 na obra" loading="lazy"><h3>Tijolo H8 RESISTENTE</h3><p>Laje 25% mais leve. Alto isolamento térmico.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%20H8" class="btn-saiba-mais btn-cinza" target="_blank">Pedir Cotação no WhatsApp →</a></div>
-            <div class="card-produto card-pequeno"><img src="img/tijolo-aparente.jpeg" alt="Tijolo Aparente" loading="lazy"><h3>Tijolo Aparente RÚSTICO</h3><p>Acabamento premium sem reboco.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%20Aparente" class="btn-saiba-mais btn-cinza" target="_blank">Pedir Cotação no WhatsApp →</a></div>
-            <div class="card-produto card-pequeno"><img src="img/meio-tijolo-aparente.jpeg" alt="Meio Tijolo Aparente" loading="lazy"><h3>Meio Tijolo Aparente</h3><p>Acabamento perfeito nas quinas. Zero desperdício.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Meio%20Tijolo%20Aparente" class="btn-saiba-mais btn-cinza" target="_blank">Pedir Cotação no WhatsApp →</a></div>
-            <div class="card-produto card-pequeno"><img src="img/meio-bloco.jpeg" alt="Meio Bloco" loading="lazy"><h3>Meio Bloco ESTRUTURAL</h3><p>Acabamento perfeito. Dispensa a quebra manual.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Meio%20Bloco" class="btn-saiba-mais btn-cinza" target="_blank">Pedir Cotação no WhatsApp →</a></div>
-            <div class="card-produto card-pequeno"><img src="img/tijolo-9-furos.jpeg" alt="Tijolo 9 Furos" loading="lazy"><h3>Tijolo 9 Furos</h3><p>Maior resistência e ideal para uso em imóveis geminados.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%209%20Furos" class="btn-saiba-mais btn-cinza" target="_blank">Pedir Cotação no WhatsApp →</a></div>
-            <div class="card-produto card-pequeno"><img src="img/canaleta-calha.jpeg" alt="Canaleta ou Calha" loading="lazy"><h3>Canaleta ou Calha</h3><p>Ideal para construção de vigas, preenchimento com concreto.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20da%20Canaleta%20ou%20Calha" class="btn-saiba-mais btn-cinza" target="_blank">Pedir Cotação no WhatsApp →</a></div>
+            <div class="card-produto card-pequeno"><img src="img/tijolo-H8.jpeg" alt="Tijolo H8 Resistente para laje" loading="lazy"><h3>Tijolo H8 RESISTENTE</h3><p>Laje 25% mais leve. Alto isolamento térmico.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%20H8" class="btn-saiba-mais btn-cinza" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a></div>
+            <div class="card-produto card-pequeno"><img src="img/tijolo-aparente.jpeg" alt="Tijolo Aparente Rústico acabamento premium" loading="lazy"><h3>Tijolo Aparente RÚSTICO</h3><p>Acabamento premium sem reboco.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%20Aparente" class="btn-saiba-mais btn-cinza" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a></div>
+            <div class="card-produto card-pequeno"><img src="img/meio-tijolo-aparente.jpeg" alt="Meio Tijolo Aparente para quinas" loading="lazy"><h3>Meio Tijolo Aparente</h3><p>Acabamento perfeito nas quinas. Zero desperdício.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Meio%20Tijolo%20Aparente" class="btn-saiba-mais btn-cinza" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a></div>
+            <div class="card-produto card-pequeno"><img src="img/meio-bloco.jpeg" alt="Meio Bloco Estrutural Cerâmico" loading="lazy"><h3>Meio Bloco ESTRUTURAL</h3><p>Acabamento perfeito. Dispensa a quebra manual.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Meio%20Bloco" class="btn-saiba-mais btn-cinza" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a></div>
+            <div class="card-produto card-pequeno"><img src="img/tijolo-9-furos.jpeg" alt="Tijolo 9 Furos para imóveis geminados" loading="lazy"><h3>Tijolo 9 Furos</h3><p>Maior resistência e ideal para uso em imóveis geminados.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20do%20Tijolo%209%20Furos" class="btn-saiba-mais btn-cinza" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a></div>
+            <div class="card-produto card-pequeno"><img src="img/canaleta-calha.jpeg" alt="Canaleta ou Calha para vigas de concreto" loading="lazy"><h3>Canaleta ou Calha</h3><p>Ideal para construção de vigas, preenchimento com concreto.</p><a href="https://wa.me/558591295366?text=Ola%20Ceara%20Ceramica%2C%20quero%20cotacao%20da%20Canaleta%20ou%20Calha" class="btn-saiba-mais btn-cinza" target="_blank" rel="noopener">Pedir Cotação no WhatsApp →</a></div>
         </div>
     </div>
 </section>
@@ -94,10 +169,10 @@
 <section id="sobre" class="empresa-sec">
     <div class="container empresa-grid">
         <div class="empresa-fotos">
-            <img src="img/fabrica-ceara.jpeg" alt="Vista aérea da Fábrica Ceará Cerâmica Grupo Tavares em Horizonte-CE" class="foto-principal">
+            <img src="img/fabrica-ceara.jpeg" alt="Vista aérea da Fábrica Ceará Cerâmica Grupo Tavares em Aquiraz-CE" class="foto-principal" loading="lazy">
             <div class="fotos-duplas">
-                <img src="img/entrega.jpeg" alt="Caminhão de entrega Ceará Cerâmica">
-                <img src="img/maquina.jpeg" alt="Máquina de produção Ceará Cerâmica">
+                <img src="img/entrega.jpeg" alt="Caminhão de entrega Ceará Cerâmica frota própria" loading="lazy">
+                <img src="img/maquina.jpeg" alt="Máquina de produção cerâmica Ceará Cerâmica" loading="lazy">
             </div>
         </div>
         <div class="empresa-texto">
@@ -112,7 +187,7 @@
                 <div class="prova-item"><i class="fa-solid fa-certificate"></i><div><strong>Controle de Qualidade Total</strong></div></div>
             </div>
             <p class="recuse"><strong>Recuse Imitações! O Verdadeiro Tijolo Ceará Tem o Nome Impresso.</strong></p>
-            <a href="https://wa.me/558591295366" target="_blank" class="btn-zap-empresa"><i class="fab fa-whatsapp"></i> Falar com Consultor</a>
+            <a href="https://wa.me/558591295366" target="_blank" rel="noopener" class="btn-zap-empresa"><i class="fab fa-whatsapp"></i> Falar com Consultor</a>
         </div>
     </div>
 </section>
@@ -123,22 +198,22 @@
         <div class="linha-titulo laranja"></div>
         <div class="grid-processo">
             <div class="etapa-card">
-                <img src="img/extracao.jpeg" alt="Extração de barro na mina">
+                <img src="img/extracao.jpeg" alt="Extração de barro na mina Ceará Cerâmica" loading="lazy">
                 <h3>1. Extração</h3>
                 <p>Barro nobre do sertão. Mais ferro = Tijolo mais vermelho e resistente.</p>
             </div>
             <div class="etapa-card">
-                <img src="img/moldagem.jpeg" alt="Esteira de moldagem">
+                <img src="img/moldagem.jpeg" alt="Esteira de moldagem industrial Ceará Cerâmica" loading="lazy">
                 <h3>2. Moldagem</h3>
                 <p>Prensas hidráulicas. Peça 100% igual, sem trinca e sem empenar.</p>
             </div>
             <div class="etapa-card">
-                <img src="img/queima.jpeg" alt="Forno a 900 graus">
+                <img src="img/queima.jpeg" alt="Forno cerâmico a 900 graus Ceará Cerâmica" loading="lazy">
                 <h3>3. Queima</h3>
                 <p>36h a 900°C. Isso dá a cor e a resistência pra durar 50 anos.</p>
             </div>
             <div class="etapa-card">
-                <img src="img/qualidade.jpeg" alt="Prateleira com todos os produtos">
+                <img src="img/qualidade.jpeg" alt="Controle de qualidade produtos Ceará Cerâmica" loading="lazy">
                 <h3>4. Qualidade</h3>
                 <p>Estoque completo. Do 8 Furos ao Cobogó, tudo testado e pronto pra entrega.</p>
             </div>
@@ -181,7 +256,7 @@
        <div class="footer-bottom"><p>© 2026 Ceará Cerâmica. Todos os direitos reservados.</p></div>
    </footer>
 
-   <a href="https://wa.me/558591295366" class="whatsapp-float" target="_blank" aria-label="Fale com a Ceará Cerâmica no WhatsApp"><i class="fab fa-whatsapp"></i></a>
+   <a href="https://wa.me/558591295366" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale com a Ceará Cerâmica no WhatsApp"><i class="fab fa-whatsapp"></i></a>
 
    <script>
    const menuToggle = document.getElementById('menu-toggle');
